@@ -10,9 +10,9 @@ logistic_fun <- function(t) {
   
 }
 
-N0 <- exp(6.927) 
+N0 <- exp(6.883) 
   
-r <- 0.0099 
+r <- 1.004e-02
   
 K <- 6e+10 
 

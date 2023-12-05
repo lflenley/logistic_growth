@@ -6,12 +6,12 @@ growth_data <- read.csv("experiment1.csv")
 
 #Case 1. K >> N0, t is small
 
-data_subset1 <- growth_data %>% filter(t<1700) %>% mutate(N_log = log(N))
+data_subset1 <- growth_data %>% filter(t<1000) %>% mutate(N_log = log(N))
 
 model1 <- lm(N_log ~ t, data_subset1)
 summary(model1)
-#so intercept of the model is 6.927 = log(N0); r = 0.0099
-#so N0 = exp(6.927)
+#so intercept of the model is 6.883 = log(N0); r = 1.004e-02
+#so N0 = exp(6.883)
 
 #Case 2. N(t) = K
 
