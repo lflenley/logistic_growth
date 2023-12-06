@@ -57,6 +57,7 @@ at t=4980, r = 0.01004, N0 = exp(6.883)
 N(4980) = exp(6.883) * exp(0.01004 * 4980) = exp((6.883)+(0.01004 * 4980)) = 5.054e+24 = 5.054*10^24
 
 **Comparison to logistic model estimate**
+
 The population size at time t=4980 under logistic growth was predicted to be 6e+10 (the estimate for carrying capacity). Under exponential growth, the population size at time t=4980 is predicted to be 5.054e+24 - this is 8.423333e+13 times greater than the population size predicted under logistic growth, and is an unrealistic prediction of the population size. Exponential growth assumes there is no density dependence, and nothing is limiting the growth of the bacteria. However, since the bacteria was being grown in a test tube with a fixed amount of resources (900μl growth media), density dependence would occur: as resources get used up and become scarce, the population growth rate (dN/dt) decreases and slows to 0, and exponential growth no longer occurs (hence logistic growth model is more appropriate for modelling population growth in this scenario). Therefore, the population size estimate at t=4980 given under exponential growth is much much higher than the estimate given under logistic growth.
   
 
