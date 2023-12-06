@@ -1,5 +1,7 @@
 # logistic_growth
+
 This file will describe the contents of this repository, which contains R scripts for a reproducible analysis of logistic growth, based on **dataset 1** from the Github practical from 7/11/23. It was originally forked from files from the repo josegabrielnb/logistic_growth 
+
 Repository contents: 
 ---
   - 'project.Rproj': contains detail about the settings used by R in this project
@@ -10,10 +12,13 @@ Repository contents:
   - 'plot_data_and_model.R': contains R script combining model parameters into a function for logistic growth, and plots the data & function
 Question 1: annotate with more information about analysis
 ===
+
 Introduction
 ---
+
 This analysis was carried out to estimate key parameters about a population of *E. Coli* under logistic growth. The parameters of interest were N0 (initial population size), r (intrinsic growth rate), and k (carrying capacity). The data was transformed and plotted, 2 linear models were used to estimate parameters, and then these parameters were fed into a function for logistic growth of the population, which was plotted with the data. 
-Scripts in detail
+
+Analysis scripts in detail
 ---
 - **'plot_data.r'**
   
@@ -40,10 +45,13 @@ The data file used was 'experiment1.csv'. The estimates obtained were:
   
 Question 2: calculate N at t = 4980, assuming exponential growth
 ===
+
 Equation for exponential growth: N(t) = N0 * exp(r*t)
 - at t=4980, r = 0.01004, N0 = exp(6.883):
 N(4980) = exp(6.883) * exp(0.01004 * 4980) = exp((6.883)+(0.01004 * 4980)) = 5.054e+24 = 5.054*10^24
+
 **Comparison to logistic model estimate**
+
 The population size at time t=4980 under logistic growth was predicted to be 6e+10 (the estimate for carrying capacity). Under exponential growth, the population size at time t=4980 is predicted to be 5.054e+24 - this is 8.423333e+13 times greater than the population size predicted under logistic growth, and is an unrealistic prediction of the population size. Exponential growth assumes there is no density dependence, and nothing is limiting the growth of the bacteria. However, since the bacteria was being grown in a test tube with a fixed amount of resources (900μl growth media), density dependence would occur: as resources get used up and become scarce, the population growth rate (dN/dt) decreases and slows to 0, and exponential growth no longer occurs (hence logistic growth model is more appropriate for modelling population growth in this scenario). Therefore, the population size estimate at t=4980 given under exponential growth is much much higher than the estimate given under logistic growth.
 
 Question 3: graphically compare exponential and logistic growth
