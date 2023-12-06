@@ -63,7 +63,7 @@ I made 2 graphs for this question:
    
     ![Local Image](figures/full_graph_logistic_and_exponential.png)
 
-2) a 'partial_graph' showing the exponential function and logistic function, plotted with experimental data, but covering a smaller range of the data (1200 < t < 2100), so that it is clearer to see the difference between the exponential and logistic function, because in the full_graph figure, the exponential function becomes so much larger than the logistic function that the logistic function appears as a line around x = 0.
+2) a 'partial_graph' showing the exponential function and logistic function, plotted with experimental data, but covering a smaller range of the data (1200 < t < 2100), so that it is clearer to see the difference between the exponential and logistic function, because in the full_graph figure, the exponential function becomes so much larger than the logistic function that the logistic function appears as a line around y = 0.
 
  ![Local Image](figures/partial_graph_logistic_and_exponential.png)
 
