@@ -18,4 +18,6 @@ This analysis was carried out to estimate key parameters about a population of *
 Scripts in detail
 ---
 - 'plot_data.r'
+This file uses ggplot to first plot an untransformed scatterplot of the data, with t on the x axis, and N on the y axis. It then plots a transformed scatterplot, with t on the x axis, and log(N) on the y axis. This second plot has 2 different linear sections to the graph (one where t<1500 and one were t>3000), demonstrating how we can use 2 different linear models to model the graph and find the values of the parameters of interest.
+  
 
