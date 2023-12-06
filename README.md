@@ -28,7 +28,7 @@ This file uses ggplot to first plot an untransformed scatterplot of the data, wi
 
 This file generates 2 linear models to fit the data:
 
-1) when t<1000, and K>>N0: the equation can be modelled by N(t) = N0 * exp(rt), or **ln(N) = ln(N0) + rt**
+1) when t<1000, and K>>N0: the equation can be modelled by N(t) = N0 * exp(r*t), or **ln(N) = ln(N0) + rt**
 
 Subset the data so that t<1000, and generate this linear model. The summary from this linear model tells us log(N0) (indicated by the estimate of the intercept), and r (indicated from the estimate of t).
 
