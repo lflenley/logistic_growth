@@ -52,7 +52,7 @@ Question 2: calculate N at t = 4980, assuming exponential growth
 
 Equation for exponential growth: N(t) = N0 * exp(r*t)
 
-at t=4980, r = 0.01004, N0 = exp(6.883)
+- at t=4980, r = 0.01004, N0 = exp(6.883):
 
 N(4980) = exp(6.883) * exp(0.01004 * 4980) = exp((6.883)+(0.01004 * 4980)) = 5.054e+24 = 5.054*10^24
 
