@@ -24,17 +24,18 @@ Analysis scripts in detail
 - **'plot_data.r'**
   
 This file uses ggplot to first plot an untransformed scatterplot of the data, with t on the x axis, and N on the y axis. It then plots a transformed scatterplot, with t on the x axis, and log(N) on the y axis. This second plot has 2 different linear sections to the graph (one where t<1000 and one were t>3000), demonstrating how we can use 2 different linear models to model the graph and find the values of the parameters of interest.
+
 - **'fit_linear_model.r'**
 
 This file generates 2 linear models to fit the data:
 
 1) when t<1000, and K>>N0: the equation can be modelled by N(t) = N0 * exp(rt), or **ln(N) = ln(N0) + rt**
-1) when t<1000, and K>>N0: the equation can be modelled by N(t) = N0 * exp(r*t), or **ln(N) = ln(N0) + rt**
 
 Subset the data so that t<1000, and generate this linear model. The summary from this linear model tells us log(N0) (indicated by the estimate of the intercept), and r (indicated from the estimate of t).
 
 2) when t>3000 and the population number is constant: the equation can be modelled by **N(t) = k**
 Subset the data so that t>3000, and generate this linear mode. The summary from the linear model tells us k (indicated by the estimate of the intercept).
+
 - **'plot_data_and_model.r'**
 This file creates a logistic function to express N at time t, using the variables N0, r, and k. These variables are defined, using the outputs from the linear models in the previous file. The data is then plotted, with the logistic function added as a line to the graph. The function forms a line through all the data points, demonstrating that the estimates we calculated were correct.
 
