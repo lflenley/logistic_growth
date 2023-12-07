@@ -37,7 +37,7 @@ Subset the data so that t<1000, and generate this linear model. The summary from
 Subset the data so that t>3000, and generate this linear mode. The summary from the linear model tells us k (indicated by the estimate of the intercept).
 
 - **'plot_data_and_model.r'**
-- 
+  
 This file creates a logistic function to express N at time t, using the variables N0, r, and k. These variables are defined, using the outputs from the linear models in the previous file. The data is then plotted, with the logistic function added as a line to the graph. The function forms a line through all the data points, demonstrating that the estimates we calculated were correct.
 
 Results
