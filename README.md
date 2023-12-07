@@ -10,6 +10,7 @@ Repository contents:
   - ' plot_data.R': contains an R script for an initial plot of the data, and for a graph of the log-transformed data
   - 'fit_linear_model.R': contains R script to estimate model parameters (N0, k & r) using 2 linear approximations
   - 'plot_data_and_model.R': contains R script combining model parameters into a function for logistic growth, and plots the data & function
+    
 Question 1: annotate with more information about analysis
 ===
 
