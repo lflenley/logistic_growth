@@ -8,7 +8,7 @@ Repository contents:
   - package-versions.txt': contains list of the packages needed for this analysis
   - 'experiment1.csv': contains dataset from experiment 1; showing the population size (N) at time t; from t=0 to t=4980
   - ' plot_data.R': contains an R script for an initial plot of the data, and for a graph of the log-transformed data
-  - 'fit_linear_model.R': contains R script to estimate model parameters (N0 & r) using 2 linear approximations
+  - 'fit_linear_model.R': contains R script to estimate model parameters (N0, k & r) using 2 linear approximations
   - 'plot_data_and_model.R': contains R script combining model parameters into a function for logistic growth, and plots the data & function
 Question 1: annotate with more information about analysis
 ===
