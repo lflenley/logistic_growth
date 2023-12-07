@@ -31,7 +31,7 @@ This file generates 2 linear models to fit the data:
 
 1) when t<1000, and K>>N0: the equation can be modelled by N(t) = N0 * exp(rt), or **ln(N) = ln(N0) + rt**
 
-Subset the data so that t<1000, and generate this linear model. The summary from this linear model tells us log(N0) (indicated by the estimate of the intercept), and r (indicated from the estimate of t).
+Subset the data so that t<1000, and generate this linear model. The summary from this linear model tells us log(N0) (indicated by the estimate of the 'intercept' from the model summary), and r (indicated from the estimate of 't' from the model summary).
 
 2) when t>3000 and the population number is constant: the equation can be modelled by **N(t) = k**
 Subset the data so that t>3000, and generate this linear mode. The summary from the linear model tells us k (indicated by the estimate of the intercept).
