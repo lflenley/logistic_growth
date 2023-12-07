@@ -10,6 +10,8 @@ Repository contents:
   - ' plot_data.R': contains an R script for an initial plot of the data, and for a graph of the log-transformed data
   - 'fit_linear_model.R': contains R script to estimate model parameters (N0, k & r) using 2 linear approximations
   - 'plot_data_and_model.R': contains R script combining model parameters into a function for logistic growth, and plots the data & function
+  - 'plot_logistic_and_exponential_model.R': contains an R script for graphs comparing how experiment results compare to the exponential growth function and the logistic growth function
+  - 'figures' file: contains 2 figures, produced from the 'plot_logistic_and_exponential_model.R' script
     
 Question 1: annotate with more information about analysis
 ===
@@ -40,6 +42,10 @@ Subset the data so that t>3000, and generate this linear mode. The summary from 
   
 This file creates a logistic function to express N at time t, using the variables N0, r, and k. These variables are defined, using the outputs from the linear models in the previous file. The data is then plotted, with the logistic function added as a line to the graph. The function forms a line through all the data points, demonstrating that the estimates we calculated were correct.
 
+- **'plot_logistic_and_exponential_model.R'**
+
+This file was created for question 3 of this assignment. It defines the logistic growth function, the exponential growth function, and the parameters of the model. It then plots 2 graphs comparing the logistic and exponential growth functions to the data, and saves these graphs to the folder 'figures'. The first graph covers the full time range of the experimental data, and the second graph covers a smaller time range, so the functions can be compared in more detail.
+
 Results
 ---
 The data file used was 'experiment1.csv'. The estimates obtained were:
@@ -53,7 +59,7 @@ Question 2: calculate N at t = 4980, assuming exponential growth
 Equation for exponential growth: N(t) = N0 * exp(r*t)
 - at t=4980, r = 0.01004, N0 = exp(6.883):
   
-N(4980) = exp(6.883) * exp(0.01004 * 4980) = exp((6.883)+(0.01004 * 4980)) = 5.054e+24 = 5.054*10^24
+N(4980) = exp(6.883) * exp(0.01004 * 4980) = exp((6.883)+(0.01004 * 4980)) = **5.054e+24** (= 5.054x10^24)
 
 **Comparison to logistic model estimate**
 
@@ -63,12 +69,16 @@ Question 3: graphically compare exponential and logistic growth
 ===
 I made 2 graphs for this question: 
 
-1) a 'full_graph' showing the exponential function and logistic function, plotted with experimental data, covering the entire range of data from the experiment:
+1) a 'full graph' showing the exponential function and logistic function, plotted with experimental data, covering the entire range of data from the experiment:
    
     ![Local Image](figures/full_graph_logistic_and_exponential.png)
+
+This graph is saved in the repository file 'figures' and is named 'full_graph_logistic_and_exponential.png'
 
 2) a 'partial_graph' showing the exponential function and logistic function, plotted with experimental data, but covering a smaller range of the data (1200 < t < 2100), so that it is clearer to see the difference between the exponential and logistic function, because in the full_graph figure, the exponential function becomes so much larger than the logistic function that the logistic function appears as a line around y = 0.
 
  ![Local Image](figures/partial_graph_logistic_and_exponential.png)
 
-They demonstrate that the logistic function for growth fits the data well, while the exponential function does not.
+ This graph is saved in the repository file 'figures' and is named 'partial_graph_logistic_and_exponential.png'
+
+Overall these graphs demonstrate that the logistic function for growth fits the data well, while the exponential function does not.
