@@ -36,6 +36,7 @@ This file generates 2 linear models to fit the data:
 Subset the data so that t<1000, and generate this linear model. The summary from this linear model tells us log(N0) (indicated by the estimate of the 'intercept' from the model summary), and r (indicated from the estimate of 't' from the model summary).
 
 2) when t is large (here, when t>3000) and the population number is constant: the equation can be modelled by **N(t) = k**
+   
 Subset the data so that t>3000, and generate this linear mode. The summary from the linear model tells us k (indicated by the estimate of the 'intercept' from the model summary).
 
 - **'plot_data_and_model.r'**
