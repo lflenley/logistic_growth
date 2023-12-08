@@ -7,7 +7,7 @@ Repository contents:
   - 'project.Rproj': contains detail about the settings used by R in this project
   - package-versions.txt': contains list of the packages needed for this analysis
   - 'experiment1.csv': contains dataset from experiment 1; showing the population size (N) at time t; from t=0 to t=4980
-  - ' plot_data.R': contains an R script for an initial plot of the data, and for a graph of the log-transformed data
+  - 'plot_data.R': contains an R script for an initial plot of the data, and for a graph of the log-transformed data
   - 'fit_linear_model.R': contains R script to estimate model parameters (N0, k & r) using 2 linear approximations
   - 'plot_data_and_model.R': contains R script combining model parameters into a function for logistic growth, and plots the data & function
   - 'plot_logistic_and_exponential_model.R': contains an R script for graphs comparing how experiment results compare to the exponential growth function and the logistic growth function
@@ -45,7 +45,7 @@ This file creates a logistic function to express N at time t, using the variable
 
 - **'plot_logistic_and_exponential_model.R'**
 
-This file was created for question 3 of this assignment. It defines the logistic growth function, the exponential growth function, and the parameters of the model. It then plots 2 graphs comparing the logistic and exponential growth functions to the data, and saves these graphs to the folder 'figures'. The first graph covers the full time range of the experimental data, and the second graph covers a smaller time range, so the functions can be compared in more detail.
+This file was created for question 3 of this assignment. It defines the logistic growth function, the exponential growth function, and the parameters of the models. It then plots 2 graphs comparing the logistic and exponential growth functions to the data, and saves these graphs to the folder 'figures'. The first graph covers the full time range of the experimental data, and the second graph covers a smaller time range, so the functions can be compared in more detail.
 
 Results
 ---
